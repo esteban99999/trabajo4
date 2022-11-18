@@ -4,6 +4,7 @@
  */
 package controlador;
 
+import java.util.List;
 import modelo.Pais;
 import servicio.PaisServiceImpl;
 
@@ -43,5 +44,7 @@ public class PaisControl {
         }
         return retorno;
     }
-
+public final List<Pais> listarP() {
+        return this.paisServiceImpl.listar();
+    }
 }

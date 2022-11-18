@@ -3,9 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package controlador;
+import java.util.List;
 import modelo.Pais;
 import modelo.Provincia;
 import servicio.ProvinciaServiceImpl;
+import servicio.PaisServiceImpl;
 /**
  *
  * @author Manuel
@@ -55,5 +57,9 @@ public class ProvinciaControl {
         }
         return retorno;
     }
-   
+    public final List<Provincia> listar() {
+        return this.provinciaServiceImpl.listar();
+    }
+    
+    
 }

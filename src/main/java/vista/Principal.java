@@ -40,7 +40,9 @@ public class Principal {
         
         System.out.println(provinciaControl.crear(data));
         System.out.println(paisControl.crear(dato1));
-        System.out.println("-------------------------------"); 
+        System.out.println("-------------------------------");
+        System.out.println(provinciaControl.listar());
+        System.out.println(paisControl.listarP());
        
     }
 }
